@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Le TP2 qui est sur le git de Nahel
+TP2/ 
+
 # User-specific files
 *.suo
 *.user
