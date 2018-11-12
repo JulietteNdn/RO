@@ -9,12 +9,13 @@ private:
 	int id;
 
 public:
+	TSommet();
 	TSommet(float, float);
 	~TSommet();
 	
 	int getId() const;
 	
 	float const calculerDistance(TSommet &);
-	float const operator[](const int);
+	float & operator[](const char);
 };
 

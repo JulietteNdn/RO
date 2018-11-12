@@ -2,7 +2,11 @@
 
 
 
-TSommet::TSommet(float x, float y) : x(x), y(y) 
+TSommet::TSommet()
+{
+}
+
+TSommet::TSommet(float x, float y) : x(x), y(y)
 {
 }
 
@@ -17,21 +21,19 @@ int TSommet::getId() const
 }
 
 
-float const TSommet::operator[](const int i)
+float & TSommet::operator[](const char c)
 {
-	if (i == 0)
+	if (c == 'x') 
 		return x;
-	else if (i == 1)
-		return y;
 	else
-		return -1;
+		return y;
 }
 
 float const TSommet::calculerDistance(TSommet & aComparer)
 {
 	float distance;
 
-	distance = pow(aComparer[0] - x,2) + pow(aComparer[1] - x, 2);
+	distance = pow(aComparer['x'] - x,2) + pow(aComparer['y'] - y, 2);
 	distance = sqrt(distance);
 
 	return distance;

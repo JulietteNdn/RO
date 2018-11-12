@@ -118,6 +118,9 @@
     <ClCompile Include="TGraphe.cpp" />
     <ClCompile Include="TSommet.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="a280.tsp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
